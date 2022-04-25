@@ -1,0 +1,230 @@
+
+.sc-login {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sc-login .logo{
+    max-width: 216px;
+    width: 100%;
+    display: inline-block;
+}
+
+.sc-login .logo img{
+    max-width: 100%;
+}
+
+.sc-login .info-left{
+    width: 100%;
+    max-width: 55%;
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background: url(../../images/login_page_bg.jpg);
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+}
+
+.sc-login .img-box{
+    margin-bottom: 24px;
+    max-width: 200px;
+    display: inline-block;
+}
+
+.sc-login .img-box img{
+    max-width: 100%;
+}
+
+.sc-login .text-info {
+    max-width: 514px;
+    width: 100%;
+    display: inline-block;
+}
+
+.sc-login .text-info p{
+    font-family: var(--rr);
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.sc-login .info-right{
+    width: 100%;
+    max-width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    height: 100%;
+    padding: 64px 64px;
+}
+
+.sc-login h1{
+    font-family: var(--isb);
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.sc-login .small-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    align-self: flex-start;
+}
+
+.sc-login .wallet-info{
+    display: flex;
+    width: 100%;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.sc-login .wallet-info a{
+    font-family: var(--ir);
+    font-size: 18px;
+    line-height: 22px;
+    color: #011E46;
+    padding: 18px 15px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.2s;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.sc-login .wallet-info a:hover{
+    background: #011E46;
+    color: #fff;
+}
+
+.sc-login .social-info{
+    display: flex;
+    align-self: flex-end;
+    width: 100%;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .sc-login .img-box{
+        max-width: 133px;
+    }
+
+    .sc-login h1{
+        font-size: 27px;
+        line-height: 37px;
+        margin-bottom: 15px;
+    }
+
+    .sc-login .text-info{
+        max-width: 373px;
+    }
+
+    .sc-login .text-info p{
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .sc-login .info-right{
+        padding: 45px 30px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+    .sc-login .info-left{
+        width: 55%;
+    }
+    
+    .sc-login .info-right{
+        width: 45%;
+    }
+
+    .sc-login .wallet-info a{
+        font-size: 15px;
+        padding: 11px 5px;
+    }
+
+    .sc-login .logo{
+        max-width: 176px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .sc-login{
+        flex-wrap: wrap;
+        padding-top: 61px;
+        position: relative;
+    }
+
+    .sc-login .logo{
+        max-width: 130px;
+    }
+    
+    .sc-login .wallet-info{
+        margin-bottom: 25px;
+    }
+
+    .sc-login .info-left{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        padding: 40px 25px;
+    }
+
+    .sc-login .info-right {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        padding: 25px 15px;
+    }
+
+    .sc-login .small-header{
+        height: 61px;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .sc-login .img-box {
+        max-width: 98px;
+        margin-bottom: 10px;
+    }
+
+    .sc-login h1{
+        font-size: 21px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .sc-login .text-info p{
+        font-size: 12px;
+        line-height: 19px;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,17 @@
+
+footer {
+    padding-top: 33px;
+    background: #fff;
+    padding-bottom: 33px;
+    margin-top: 64px;
+}
+
+footer .comp-socials{
+    margin: auto;
+}
+
+@media only screen and (max-width: 576px) {
+    footer {
+        margin-top: 0;
+    }
+}

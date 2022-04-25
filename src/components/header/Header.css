@@ -1,0 +1,245 @@
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 61px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+    width: 100%;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .logo {
+    display: flex;
+    width: 174px;
+    flex-shrink: 0;
+}
+
+header .logo a{
+    display: inline-block;
+    width: 100%;
+    line-height: 0;
+}
+
+header .logo img {
+    max-width: 100%;
+}
+
+header ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+header .h-left{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+header .h-middle{
+    height: 61px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+header .h-middle a{
+    padding: 15px 32px;
+    font-family: var(--ir);
+    font-size: 18px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+    transition: 0.2s;
+    color: #011E46;
+    text-decoration: none;
+}
+
+header .h-middle a:hover{
+    background-color: #011E46;
+    color: #fff;
+}
+
+header .h-middle a.active{
+    background-color: #011E46;
+    color: #fff;
+}
+
+header .h-right{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+    
+}
+
+header .login{
+    margin-left: 33px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+header .login-icon{
+    margin-right: 4px;
+    flex-shrink: 0;
+}
+
+header .login a{
+    font-family: var(--ir);
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #011E46;
+    display: flex;
+
+}
+
+header .login a:hover{
+    text-decoration: none;
+}
+
+header .burger-mob{
+    display: none;
+    width: 34px;
+}
+
+header .close-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 1330px) {
+
+    header .h-middle a{
+      padding: 15px 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    header .h-middle a{
+      font-size: 15px;
+      padding: 15px 18px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+  
+    header .login{
+        margin-left: 15px;
+    }
+
+    header .login a {
+      font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    header .logo {
+        width: 100%;
+    }
+
+    header .burger-mob{
+        padding-right: 0;
+        box-shadow: none!important;
+        border: none;
+        display: inline-block;
+    }
+
+    header .login-icon {
+        width: 20px;
+    }
+
+    header .login-icon img{
+        max-width: 100%;
+    }
+
+    header .login{
+        margin-left: 25px;
+    }
+    
+    header .login a {
+        font-size: 13px;
+    }
+
+    header .mob-menu{
+        display: none;
+        transition: 0.2s;
+    }
+    header .mob-menu {
+        display: block;
+        position: fixed;
+        width: 320px;
+        max-width: 85%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 9999;
+        overflow: auto;
+        visibility: hidden;
+        opacity: 0;
+        padding: 45px 18px 25px 18px;
+        margin: 0;
+        -webkit-overflow-scrolling: touch;
+        background: #fff;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+      }
+      header .overlay.open {
+        display: block;
+        position: fixed;
+        z-index: 9998;
+        background: #000;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      header .mob-menu.show {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.274);
+                box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.274);
+      }
+
+      header .h-middle{
+          display: inline-block;
+          flex-wrap: wrap;
+          height: auto;
+          margin-top: 15px;
+      }
+
+      header .close-menu{
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          box-shadow: none;
+          background: none;
+          border: none;
+          outline: none;
+          display: inline-block;
+      }
+
+}
+
+
+

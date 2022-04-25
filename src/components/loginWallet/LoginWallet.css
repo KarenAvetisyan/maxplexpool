@@ -1,0 +1,109 @@
+
+.login-wallet-box{
+    padding-top: 30px;
+}
+
+.login-wallet-box{
+    padding-top: 30px;
+    max-width: 770px;
+    width: 100%;
+    margin: auto;
+}
+
+.login-wallet-box h4{
+    margin-bottom: 24px;
+    font-family: var(--ir);
+    font-size: 36px;
+    line-height: 44px;
+    color: #011E46;
+}
+
+.login-wallet-box p{
+    font-family: var(--ir);
+    font-size: 24px;
+    line-height: 29px;
+    color: #93A0B2;
+}
+
+.login-wallet-box p a{
+    font-family: var(--ib);
+    margin-left: 5px;
+    color: #DF2E43;
+    text-underline-position: under;
+}
+
+.login-wallet-box .primary__btn{
+    margin-top: 15px;
+}
+
+.login-wallet-footer {
+    height: 142px;
+    display: flex;
+    align-items: center;
+    margin-top: 105px;
+}
+
+.login-wallet-footer .row{
+    width: 100%;
+}
+
+.login-wallet-footer  p{
+    font-family: var(--il);
+    font-size: 18px;
+    line-height: 25px;
+    color: #011E46;
+    margin: 10px 0;
+}
+
+.login-wallet-footer  p a{
+    color: #011E46;
+}
+
+@media only screen and (max-width: 767px) {
+    .login-wallet-box h4{
+        font-size: 31px;
+        line-height: 38px;
+    }
+
+    .login-wallet-box p{
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .login-wallet-footer{
+        margin-top: 58px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .login-wallet-box h4 {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    .login-wallet-box p {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .login-wallet-box p a{
+        display: inline-block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .login-wallet-footer{
+        height: auto;
+        margin-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .login-wallet-footer p{
+        font-size: 13px;
+        line-height: 22px;
+        margin: 5px 0;
+    }
+
+}

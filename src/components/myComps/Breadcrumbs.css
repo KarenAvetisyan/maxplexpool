@@ -1,0 +1,41 @@
+
+.breadcrumbs{
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs p {
+    margin-bottom: 0;
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #93A0B2;
+    font-family: var(--ir);
+}
+
+.breadcrumbs a{
+    color: #93A0B2;
+    text-decoration: none;
+    margin-top: 30px;
+    text-underline-position: under;
+}
+
+.breadcrumbs a:hover{
+    text-decoration: underline;
+}
+
+.breadcrumbs span{
+    margin: 0 5px;
+    color: #93A0B2;
+    font-size: 12px;
+    font-family: var(--ir);
+}
+
+@media only screen and (max-width: 576px) {
+
+    .breadcrumbs{
+        height: 52px;
+    }
+
+}
